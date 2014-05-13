@@ -17,6 +17,14 @@ A personal note: After I watched my very first footage I was a kind of disappoin
 * Ubuntu 12.04 native apt-get version of Kdenlive
 * Due to problems with speed-effect (slowing down) I am working with v.0.9.7
 
-## Notes
+## FAQ
 * Sometimes the filter "Levels" doesn't work. E.g. you got a white rectangle.
 * Solution: Remember the parameters, remove it from the stack and add a new one with the original parameters.
+
+* If you still not get good results.
+* Solution: Adapt White Balance --> Use the pipette and select in your video a area that should looks grey or white in real life.
+
+## To Do
+* GoTune outdoor
+* GoTune indoor
+* GoTune dark
