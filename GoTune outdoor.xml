@@ -1,0 +1,150 @@
+<effectgroup type="custom" id="GoTune outdoor" name="GoTune outdoor">
+ <effect tag="frei0r.hqdn3d" kdenlive_info="1/-1/GoTune outdoor" id="frei0r.hqdn3d" disable="0">
+  <name>Denoiser</name>
+  <description>High quality 3D denoiser</description>
+  <author>Marko Cebokli, Daniel Moreno</author>
+  <parameter default="40" type="simplekeyframe" value="40" intimeline="1" min="0" name="Spatial" max="1000" factor="1000" keyframes="0=137;">
+   <name>Spatial</name>
+   <comment>Amount of spatial filtering</comment>
+  </parameter>
+  <parameter default="60" type="simplekeyframe" value="60" min="0" name="Temporal" max="1000" factor="1000" keyframes="0=19;">
+   <name>Temporal</name>
+   <comment>Amount of temporal filtering</comment>
+  </parameter>
+  <version>0.1</version>
+  <version>0.1</version>
+  <version>0.1</version>
+  <version>0.1</version>
+ </effect>
+ <effect tag="frei0r.sharpness" kdenlive_info="1/-1/GoTune outdoor" id="frei0r.sharpness" disable="0">
+  <name>Sharpen</name>
+  <description>Unsharp masking (port from Mplayer)</description>
+  <author>Marko Cebokli, Remi Guyomarch</author>
+  <parameter default="300" type="simplekeyframe" value="300" intimeline="1" min="0" name="Amount" max="1000" factor="1000" keyframes="0=769;">
+   <name>Amount</name>
+  </parameter>
+  <parameter default="0" type="simplekeyframe" value="0" min="0" name="Size" max="1000" factor="1000" keyframes="0=347;">
+   <name>Size</name>
+  </parameter>
+  <version>0.2</version>
+  <version>0.2</version>
+  <version>0.2</version>
+  <version>0.2</version>
+ </effect>
+ <effect version="0.2" tag="frei0r.sopsat" kdenlive_info="0/-1/GoTune outdoor" LC_NUMERIC="C" id="frei0r.sopsat" disable="0">
+  <name>SOP/Sat</name>
+  <description>Changes Slope, Offset, and Power of the color components, and the overall Saturation, according to the ASC CDL (Color Decision List).</description>
+  <author>Simon A. Eugster (Granjow)</author>
+  <parameter default="100" type="simplekeyframe" value="100" intimeline="1" min="0" name="rSlope" max="1000" factor="2000" keyframes="0=100">
+   <name>Slope Red</name>
+   <comment><![CDATA[Changing the slope means multiplying the pixel value with a constant value. Black pixels will remain black, whileas brighter ones will be changed.<br/>
+                All effects can be observed well when applied on a greyscale gradient and looking at the RGB Parade monitor.]]></comment>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="0" name="gSlope" max="1000" factor="2000" keyframes="0=100">
+   <name>Slope Green</name>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="0" name="bSlope" max="1000" factor="2000" keyframes="0=100">
+   <name>Slope Blue</name>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="0" name="aSlope" max="1000" factor="2000" keyframes="0=100">
+   <name>Slope Alpha</name>
+  </parameter>
+  <parameter offset="-1024" default="0" type="simplekeyframe" value="0" min="-1024" name="rOffset" max="1024" factor="2048" keyframes="0=0">
+   <name>Offset Red</name>
+   <comment>Changing the offset lifts (or lowers) the brightness of each pixel by the given value.</comment>
+  </parameter>
+  <parameter offset="-1024" default="0" type="simplekeyframe" value="0" min="-1024" name="gOffset" max="1024" factor="2048" keyframes="0=0">
+   <name>Offset Green</name>
+  </parameter>
+  <parameter offset="-1024" default="0" type="simplekeyframe" value="0" min="-1024" name="bOffset" max="1024" factor="2048" keyframes="0=0">
+   <name>Offset Blue</name>
+  </parameter>
+  <parameter offset="-1024" default="0" type="simplekeyframe" value="0" min="-1024" name="aOffset" max="1024" factor="2048" keyframes="0=0">
+   <name>Offset Alpha</name>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="1" name="rPower" max="1000" factor="2000" keyframes="0=100">
+   <name>Power Red</name>
+   <comment><![CDATA[Changes the Gamma value for the selected channel. Black and white pixel values will not be affected, but everything between.<br/>
+                Mathematically, what happens is an exponentiation of the pixel brightness on <code>[0,1]</code> by the gamma value.]]></comment>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="1" name="gPower" max="1000" factor="2000" keyframes="0=100">
+   <name>Power Green</name>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="1" name="bPower" max="1000" factor="2000" keyframes="0=100">
+   <name>Power Blue</name>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="1" name="aPower" max="1000" factor="2000" keyframes="0=100">
+   <name>Power Alpha</name>
+  </parameter>
+  <parameter default="100" type="simplekeyframe" value="100" min="0" name="saturation" max="500" factor="1000" keyframes="0=160;">
+   <name>Overall Saturation</name>
+   <comment>The overall saturation will be changed in the last step of this filter.</comment>
+  </parameter>
+  <version>0.2</version>
+  <version>0.2</version>
+  <version>0.2</version>
+  <version>0.2</version>
+ </effect>
+ <effect tag="frei0r.contrast0r" kdenlive_info="1/-1/GoTune outdoor" id="frei0r.contrast0r" disable="1">
+  <name>Contrast</name>
+  <description>Adjusts the contrast of a source image</description>
+  <author>Jean-Sebastien Senecal</author>
+  <parameter default="250" type="simplekeyframe" value="250" intimeline="1" min="0" name="Contrast" max="1000" factor="500" keyframes="0=220;">
+   <name>Contrast</name>
+  </parameter>
+  <version>0.2</version>
+  <version>0.2</version>
+  <version>0.2</version>
+  <version>0.2</version>
+ </effect>
+ <effect version="0.2" tag="frei0r.levels" kdenlive_info="1/-1/GoTune outdoor" LC_NUMERIC="C" id="frei0r.levels" disable="0">
+  <name>Levels</name>
+  <description>Adjust levels</description>
+  <author>Maksim Golovkin</author>
+  <parameter default="0.3" type="list" value="0.3" name="Channel" paramlist="0;0.1;0.2;0.3">
+   <paramlistdisplay>Red,Green,Blue,Luma</paramlistdisplay>
+   <name>Channel</name>
+  </parameter>
+  <parameter default="0" type="simplekeyframe" value="0" intimeline="1" min="0" name="Input black level" max="1000" factor="1000" keyframes="0=229;">
+   <name>Input black level</name>
+  </parameter>
+  <parameter default="1000" type="simplekeyframe" value="1000" min="0" name="Input white level" max="1000" factor="1000" keyframes="0=1000;">
+   <name>Input white level</name>
+  </parameter>
+  <parameter default="1000" type="simplekeyframe" value="1000" min="10" name="Gamma" max="4000" factor="4000" keyframes="0=1000">
+   <name>Gamma</name>
+  </parameter>
+  <parameter default="0" type="simplekeyframe" value="0" min="0" name="Black output" max="1000" factor="1000" keyframes="0=0;">
+   <name>Black output</name>
+  </parameter>
+  <parameter default="1000" type="simplekeyframe" value="1000" min="0" name="White output" max="1000" factor="1000" keyframes="0=1000;">
+   <name>White output</name>
+  </parameter>
+  <parameter default="0" type="bool" value="0" name="Show histogram">
+   <name>Show histogram</name>
+  </parameter>
+  <parameter default="0.3" type="list" value="0.3" name="Histogram position" paramlist="0;0.1;0.2;0.3">
+   <paramlistdisplay>Top Left,Top Right,Bottom Left,Bottom Right</paramlistdisplay>
+   <name>Histogram position</name>
+  </parameter>
+  <version>0.3</version>
+  <version>0.3</version>
+  <version>0.3</version>
+  <version>0.3</version>
+ </effect>
+ <effect version="0.3" tag="frei0r.balanc0r" kdenlive_info="1/-1/GoTune outdoor" LC_NUMERIC="C" id="frei0r.balanc0r" disable="0">
+  <name>White Balance</name>
+  <description>Adjust the white balance / color temperature</description>
+  <author>Dan Dennedy</author>
+  <parameter default="0xffffffff" type="color" value="0xeeeeeeff" name="Neutral Color">
+   <name>Neutral Color</name>
+  </parameter>
+  <parameter default="1333" type="simplekeyframe" value="1333" intimeline="1" min="0" name="Green Tint" max="10000" factor="10000" keyframes="0=843;">
+   <name>Green Tint</name>
+  </parameter>
+  <version>0.3</version>
+  <version>0.3</version>
+  <version>0.3</version>
+  <version>0.3</version>
+ </effect>
+</effectgroup>
