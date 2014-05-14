@@ -1,13 +1,13 @@
-<effectgroup type="custom" id="GoTune outdoor" name="GoTune outdoor">
- <effect tag="frei0r.hqdn3d" kdenlive_info="3/-1/GoTune outdoor" id="frei0r.hqdn3d" disable="0">
+<effectgroup type="custom" id="GoTune indoor" name="GoTune indoor">
+ <effect tag="frei0r.hqdn3d" kdenlive_info="0/-1/GoTune indoor" id="frei0r.hqdn3d" disable="0">
   <name>Denoiser</name>
   <description>High quality 3D denoiser</description>
   <author>Marko Cebokli, Daniel Moreno</author>
-  <parameter default="40" type="simplekeyframe" value="40" intimeline="1" min="0" name="Spatial" max="1000" factor="1000" keyframes="0=137;">
+  <parameter default="40" type="simplekeyframe" value="40" intimeline="1" min="0" name="Spatial" max="1000" factor="1000" keyframes="0=284;">
    <name>Spatial</name>
    <comment>Amount of spatial filtering</comment>
   </parameter>
-  <parameter default="60" type="simplekeyframe" value="60" min="0" name="Temporal" max="1000" factor="1000" keyframes="0=19;">
+  <parameter default="60" type="simplekeyframe" value="60" min="0" name="Temporal" max="1000" factor="1000" keyframes="0=72;">
    <name>Temporal</name>
    <comment>Amount of temporal filtering</comment>
   </parameter>
@@ -15,23 +15,25 @@
   <version>0.1</version>
   <version>0.1</version>
   <version>0.1</version>
+  <version>0.1</version>
  </effect>
- <effect tag="frei0r.sharpness" kdenlive_info="1/-1/GoTune outdoor" id="frei0r.sharpness" disable="0">
+ <effect tag="frei0r.sharpness" kdenlive_info="1/-1/GoTune indoor" id="frei0r.sharpness" disable="0">
   <name>Sharpen</name>
   <description>Unsharp masking (port from Mplayer)</description>
   <author>Marko Cebokli, Remi Guyomarch</author>
-  <parameter default="300" type="simplekeyframe" value="300" intimeline="1" min="0" name="Amount" max="1000" factor="1000" keyframes="0=769;">
+  <parameter default="300" type="simplekeyframe" value="300" intimeline="1" min="0" name="Amount" max="1000" factor="1000" keyframes="0=540;">
    <name>Amount</name>
   </parameter>
-  <parameter default="0" type="simplekeyframe" value="0" min="0" name="Size" max="1000" factor="1000" keyframes="0=347;">
+  <parameter default="0" type="simplekeyframe" value="0" min="0" name="Size" max="1000" factor="1000" keyframes="0=515;">
    <name>Size</name>
   </parameter>
   <version>0.2</version>
   <version>0.2</version>
   <version>0.2</version>
   <version>0.2</version>
+  <version>0.2</version>
  </effect>
- <effect version="0.2" tag="frei0r.sopsat" kdenlive_info="0/-1/GoTune outdoor" LC_NUMERIC="C" id="frei0r.sopsat" disable="0">
+ <effect version="0.2" tag="frei0r.sopsat" kdenlive_info="1/-1/GoTune indoor" LC_NUMERIC="C" id="frei0r.sopsat" disable="0">
   <name>SOP/Sat</name>
   <description>Changes Slope, Offset, and Power of the color components, and the overall Saturation, according to the ASC CDL (Color Decision List).</description>
   <author>Simon A. Eugster (Granjow)</author>
@@ -76,7 +78,7 @@
   <parameter default="100" type="simplekeyframe" value="100" min="1" name="aPower" max="1000" factor="2000" keyframes="0=100">
    <name>Power Alpha</name>
   </parameter>
-  <parameter default="100" type="simplekeyframe" value="100" min="0" name="saturation" max="500" factor="1000" keyframes="0=195;">
+  <parameter default="100" type="simplekeyframe" value="100" min="0" name="saturation" max="500" factor="1000" keyframes="0=172;">
    <name>Overall Saturation</name>
    <comment>The overall saturation will be changed in the last step of this filter.</comment>
   </parameter>
@@ -84,8 +86,9 @@
   <version>0.2</version>
   <version>0.2</version>
   <version>0.2</version>
+  <version>0.2</version>
  </effect>
- <effect tag="frei0r.contrast0r" kdenlive_info="1/-1/GoTune outdoor" id="frei0r.contrast0r" disable="1">
+ <effect tag="frei0r.contrast0r" kdenlive_info="1/-1/GoTune indoor" id="frei0r.contrast0r" disable="1">
   <name>Contrast</name>
   <description>Adjusts the contrast of a source image</description>
   <author>Jean-Sebastien Senecal</author>
@@ -96,8 +99,9 @@
   <version>0.2</version>
   <version>0.2</version>
   <version>0.2</version>
+  <version>0.2</version>
  </effect>
- <effect version="0.2" tag="frei0r.levels" kdenlive_info="1/-1/GoTune outdoor" LC_NUMERIC="C" id="frei0r.levels" disable="0">
+ <effect version="0.2" tag="frei0r.levels" kdenlive_info="1/-1/GoTune indoor" LC_NUMERIC="C" id="frei0r.levels" disable="0">
   <name>Levels</name>
   <description>Adjust levels</description>
   <author>Maksim Golovkin</author>
@@ -105,10 +109,10 @@
    <paramlistdisplay>Red,Green,Blue,Luma</paramlistdisplay>
    <name>Channel</name>
   </parameter>
-  <parameter default="0" type="simplekeyframe" value="0" intimeline="1" min="0" name="Input black level" max="1000" factor="1000" keyframes="0=229;">
+  <parameter default="0" type="simplekeyframe" value="0" intimeline="1" min="0" name="Input black level" max="1000" factor="1000" keyframes="0=105;">
    <name>Input black level</name>
   </parameter>
-  <parameter default="1000" type="simplekeyframe" value="1000" min="0" name="Input white level" max="1000" factor="1000" keyframes="0=1000;">
+  <parameter default="1000" type="simplekeyframe" value="1000" min="0" name="Input white level" max="1000" factor="1000" keyframes="0=928;">
    <name>Input white level</name>
   </parameter>
   <parameter default="1000" type="simplekeyframe" value="1000" min="10" name="Gamma" max="4000" factor="4000" keyframes="0=1000">
@@ -131,17 +135,19 @@
   <version>0.3</version>
   <version>0.3</version>
   <version>0.3</version>
+  <version>0.3</version>
  </effect>
- <effect version="0.3" tag="frei0r.balanc0r" kdenlive_info="1/-1/GoTune outdoor" LC_NUMERIC="C" id="frei0r.balanc0r" disable="0">
+ <effect version="0.3" tag="frei0r.balanc0r" kdenlive_info="1/-1/GoTune indoor" LC_NUMERIC="C" id="frei0r.balanc0r" disable="0">
   <name>White Balance</name>
   <description>Adjust the white balance / color temperature</description>
   <author>Dan Dennedy</author>
   <parameter default="0xffffffff" type="color" value="0xeeeeeeff" name="Neutral Color">
    <name>Neutral Color</name>
   </parameter>
-  <parameter default="1333" type="simplekeyframe" value="1333" intimeline="1" min="0" name="Green Tint" max="10000" factor="10000" keyframes="0=843;">
+  <parameter default="1333" type="simplekeyframe" value="1333" intimeline="1" min="0" name="Green Tint" max="10000" factor="10000" keyframes="0=1685;">
    <name>Green Tint</name>
   </parameter>
+  <version>0.3</version>
   <version>0.3</version>
   <version>0.3</version>
   <version>0.3</version>
