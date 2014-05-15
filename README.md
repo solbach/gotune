@@ -26,4 +26,4 @@ A personal note: After I watched my very first footage I was a kind of disappoin
 
 ## To Do
 * Examples
-* Maybe some instagram/iOS7 Fotoeffect?
+* Maybe some instagram/iOS7 Fotoeffects for Videos?
