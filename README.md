@@ -25,5 +25,6 @@ A personal note: After I watched my very first footage I was a kind of disappoin
 * Solution: Adapt White Balance --> Use the pipette and select in your video a area that should looks grey or white in real life.
 
 ## To Do
+* Testing with GoPro Hero 3+
 * Examples
 * Maybe some instagram/iOS7 Fotoeffects for Videos?
